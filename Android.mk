@@ -6,7 +6,7 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := privapp-permissions-AuroraStore.xml
+LOCAL_MODULE := privapp-permissions-AuroraServices.xml
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/permissions
@@ -15,12 +15,21 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE := AuroraStore
-LOCAL_SRC_FILES := AuroraStore_3.0.6.apk
+LOCAL_MODULE := AuroraServices
+LOCAL_SRC_FILES := AuroraServices_1.0.1.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_REQUIRED_MODULES := privapp-permissions-AuroraStore.xml
+LOCAL_REQUIRED_MODULES := privapp-permissions-AuroraServices.xml
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE := AuroraStore
+LOCAL_SRC_FILES := AuroraStore_3.0.7.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_CERTIFICATE := PRESIGNED
 include $(BUILD_PREBUILT)
 
