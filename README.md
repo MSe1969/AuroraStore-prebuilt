@@ -11,5 +11,5 @@ Please visit https://gitlab.com/AuroraOSS/AuroraStore to learn about the app and
 
 ## How to include into your Custom ROM build
 - Include this repo into your local manifest (path does not matter, suggest prebuilts/AuroraStore)
-- Specify `PRODUCT_PACKAGES += AuroraStore` in a 'product' .mk file (**not** in an Android.mk file)
+- Specify `PRODUCT_PACKAGES += AuroraStore AuroraServices` in a 'product' .mk file (**not** in an Android.mk file)
 - An 'elegant' way to do so without having to fork and track any specific device or vendor repository is to simply create an own product.mk file in directory vendor/extras (or to add the above statement into an existing one)
