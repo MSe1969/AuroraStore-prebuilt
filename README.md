@@ -17,3 +17,6 @@ Please visit https://gitlab.com/AuroraOSS to learn about the apps and also its l
 - Specify `PRODUCT_PACKAGES += AuroraDroid AuroraStore AuroraServices` in a 'product' .mk file (**not** in an Android.mk file)
 - Depending on what you wish to include or not, leave out from above statement, what you don't want to include
 - An 'elegant' way to do so without having to fork and track any specific device or vendor repository is to simply create an own product.mk file in directory vendor/extras (or to add the above statement into an existing one)
+
+## Branches
+Use branch 'master' up to Android 11, use branch '12L' from Android 12 onwards
