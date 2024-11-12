@@ -38,7 +38,7 @@ LOCAL_OPTIONAL_USES_LIBRARIES := \
     androidx.window.extensions \
     androidx.window.sidecar
 LOCAL_PRODUCT_MODULE := true
-LOCAL_REPLACE_PREBUILT_APK_INSTALLED := $(LOCAL_PATH)/AuroraStore_4.6.2.apk
+LOCAL_REPLACE_PREBUILT_APK_INSTALLED := $(LOCAL_PATH)/$(LOCAL_SRC_FILES)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
