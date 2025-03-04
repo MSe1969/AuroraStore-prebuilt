@@ -1,5 +1,7 @@
 # AuroraStore-prebuilt
 
+THIS REPO HAS BEEN MIGRATED TO CODEBERG !!
+
 Prebuilt AuroraStore & AuroraDroid - taken from 
     https://gitlab.com/AuroraOSS/AuroraStore/tags
     https://gitlab.com/AuroraOSS/AuroraDroid/tags
